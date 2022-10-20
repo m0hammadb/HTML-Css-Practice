@@ -1,0 +1,19 @@
+.owl-carousel2 {
+    .owl-item {
+        transition: 1s;
+        transform: scale(.7);
+    }
+    .owl-item:hover {
+        transform: scale(.8);
+    }
+
+    .center {
+        transform: scale(.9) !important;
+    }
+    
+    .owl-item:nth-last-child()
+    {
+        transform: scale(.6) !important;
+    }
+    
+}

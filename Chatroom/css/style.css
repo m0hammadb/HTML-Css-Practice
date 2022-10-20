@@ -1,0 +1,212 @@
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.avatar-image {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.btn-chat-control {
+  width: 70px;
+  height: 60px;
+  text-align: center;
+  font-size: 20px;
+  -webkit-box-shadow: 0px 0px 3px gray;
+          box-shadow: 0px 0px 3px gray;
+}
+
+.btn-video-call {
+  background-color: #2e9ab0;
+  color: white;
+}
+
+.btn-browser {
+  background-color: #f7f8f9;
+  color: black;
+  font-weight: bold;
+  letter-spacing: 3px;
+}
+
+.msg-container {
+  border: 1px solid #d6d3d3;
+  border-radius: 5px;
+}
+
+.msg-container .left-side {
+  border-right: 1px solid #d6d3d3;
+}
+
+.msg-container .left-side .searchbox {
+  width: 100%;
+  padding-top: 30px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #d6d3d3;
+}
+
+.msg-container .left-side .searchbox input {
+  width: 85%;
+  margin: 0 auto;
+}
+
+.msg-container .left-side .contacts-wrapper {
+  overflow-y: scroll;
+  overflow-x: hidden;
+  scrollbar-width: thin;
+  max-height: 635px;
+}
+
+.msg-container .left-side .contacts .contact-box .row:hover {
+  background-color: #f1eded;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.msg-container .left-side .contacts .contact-box .contact-name {
+  color: #504340;
+  display: block;
+  font-size: 14px;
+}
+
+@media screen and (min-width: 1400px) {
+  .msg-container .left-side .contacts .contact-box .contact-name {
+    font-size: 20px;
+  }
+}
+
+.msg-container .left-side .contacts .contact-box .contact-status {
+  color: #504340;
+}
+
+.msg-container .left-side .contacts .contact-box .unread-messages {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 20px;
+  height: 24px;
+  background-color: green;
+  border-radius: 5px;
+  text-align: center;
+  font-weight: bold;
+  color: #463b3b;
+}
+
+.msg-container .right-side .top-side {
+  border-bottom: 1px solid #d6d3d3;
+  position: relative;
+}
+
+.msg-container .right-side .top-side .active-name {
+  font-weight: bold;
+  font-size: 22px;
+  display: block;
+}
+
+.msg-container .right-side .top-side .active-status {
+  color: #8e827b;
+  font-style: italic;
+}
+
+.msg-container .right-side .top-side::before {
+  content: '';
+  bottom: -2px;
+  left: 0;
+  background-color: white;
+  position: absolute;
+  width: 16px;
+  height: 3px;
+  z-index: 3;
+}
+
+.msg-container .right-side .chat-messages {
+  overflow-y: scroll;
+  scrollbar-width: thin;
+  max-height: 550px;
+}
+
+.msg-container .right-side .chat-messages .chat-msg-box {
+  margin-top: 10px;
+}
+
+.msg-container .right-side .chat-messages .chat-msg-box .message-info {
+  max-width: 80%;
+  display: inline-block;
+  background-color: #dbdee0;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.msg-container .right-side .chat-messages .chat-msg-box .message-info .sender-name {
+  font-weight: bold;
+  font-size: 20px;
+  display: block;
+  margin-bottom: 20px;
+}
+
+.msg-container .right-side .chat-messages .chat-msg-box .message-info .message-text {
+  font-size: 20px;
+  display: inline-block;
+}
+
+.msg-container .right-side .chat-messages .chat-msg-box .message-info-recipent {
+  position: relative;
+}
+
+.msg-container .right-side .chat-messages .chat-msg-box .message-info-recipent::before {
+  content: '';
+  top: 2px;
+  left: -22px;
+  background-color: white;
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-right: 25px solid #dbdee0;
+  border-bottom: 10px solid transparent;
+  z-index: 3;
+}
+
+.msg-container .right-side .chat-messages .chat-msg-box .message-info-me {
+  position: relative;
+}
+
+.msg-container .right-side .chat-messages .chat-msg-box .message-info-me::before {
+  content: '';
+  top: 2px;
+  right: -22px;
+  background-color: white;
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-right: 25px solid #dbdee0;
+  border-bottom: 10px solid transparent;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  z-index: 3;
+}
+
+.msg-container .right-side .send-message {
+  position: relative;
+  border-top: 1px solid #d6d3d3;
+}
+
+.msg-container .right-side .send-message::before {
+  content: '';
+  top: -2px;
+  left: 0;
+  background-color: white;
+  position: absolute;
+  width: 16px;
+  height: 3px;
+  z-index: 3;
+}
+/*# sourceMappingURL=style.css.map */

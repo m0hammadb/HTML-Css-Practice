@@ -1,0 +1,51 @@
+.footer {
+    background-image: url('../images/bgBottom.png');
+
+    .logo{
+        cursor: pointer;
+        width: 95px;
+    }
+
+    
+        
+        a{
+            text-decoration: none;
+            color: rgba(255, 255, 255, 0.753);
+            font-weight: bold;
+            font-size: 14px;
+
+            @media screen and (max-width:500px) {
+                font-size: 14px;
+            }
+
+            i {
+                transition: .5s;
+                width: 25px;
+                height: 25px;
+                padding: 5px;
+                background-color: #5dadff;
+                margin-right: 15px;
+                margin-top: 10px;
+                border-radius: 5px;
+                text-align: center;
+            }
+
+            &:hover i {
+                background-color: white;
+                color: #5dadff;
+            }
+        }
+
+        .mainlinks {
+            a {
+                transition: .5s;
+                &:hover {
+                    color: $primaryYellow;
+                }
+            }
+        }
+        
+    
+
+    
+}

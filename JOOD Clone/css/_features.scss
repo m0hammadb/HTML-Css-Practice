@@ -1,0 +1,51 @@
+.features {
+    background-color: #fcfcfc;
+    background-image: url('../images/Repeat\ Grid\ 1.png');
+    background-repeat: no-repeat;
+    background-position: left;
+    @media screen and (max-width: 992px) {
+        background-image: none;
+    }
+    padding: 150px 0 !important;
+    @media screen and (max-width: 500px) {
+        h6 {
+            font-size: 15px;
+        }
+        p{
+            font-size: 12px;
+        }
+    }
+
+    i {
+        animation: colorChanger;
+        animation-play-state: paused;
+        transition: 1s;
+        color: $primaryYellow;
+        &:hover {
+            animation-play-state: running;
+            animation-duration: 1000ms;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+        }
+
+        
+    }
+}
+
+@keyframes colorChanger {
+    0%{
+        color:$primaryYellow;
+    }
+    25% {
+        color:chocolate;
+    }
+    50% {
+        color:red;
+    }
+    75% {
+        color:purple;
+    }
+    100% {
+        color:$primaryYellow;
+    }
+}

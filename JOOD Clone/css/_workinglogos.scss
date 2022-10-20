@@ -1,0 +1,19 @@
+.working-logos {
+    .brand-box {
+        img {
+            width: 100px;
+            height: 100px;
+            opacity: .5;
+            transition: .5s;
+            &:hover {
+                opacity: 1;
+            }
+
+        
+        }
+
+        .biggerimg {
+            width: 150px;
+        }
+    }
+}

@@ -1,0 +1,47 @@
+.contactus {
+  h1 {
+    color: rgba(0, 0, 0, 0.788);
+  }
+  form {
+      input[type="text"],input[type="email"] {
+          height: 60px;
+          
+          
+      }
+
+      input,textarea {
+        background-color: #fbfbfb !important;
+        border: none !important;
+      }
+      
+      textarea {
+          resize: none;
+      }
+
+      .sbtn {
+          width: 200px;
+          height: 50px;
+          border-radius: 10px;
+          background-color: #3096fe;
+          border-color: #3096fe;
+
+          &:hover {
+              background-color: #1a7bdb;
+          }
+      }
+
+      
+  }
+
+  p {
+      width: 50%;
+      
+      @media screen and (max-width: 1180px) {
+          width: 100%;
+      }
+  }
+}
+
+::placeholder {
+    color: #cccccc !important;
+}

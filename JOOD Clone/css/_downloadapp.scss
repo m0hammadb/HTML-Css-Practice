@@ -1,0 +1,48 @@
+.downloadapp{
+    background-image: url('../images/Rectangle\ 1913\(2\).png');
+    position: relative;
+    overflow: hidden;
+    .right-side {
+        transform: translateY(80px);
+        @media screen and (max-width: 992px) {
+            transform: translateY(0);
+        }
+    }
+
+    .btn-dl {
+        background-color: #f8f8f8;
+        transition: 0.5s;
+        border-radius: 10px;
+        width: 218px;
+        height: 80px;
+        border: none;
+        margin-right: 5px;
+        p {
+          padding: 0;
+          margin: 0;
+          font-size: 12px;
+        }
+        img {
+          width: 50px;
+          height: 50px;
+          padding: 5px 0;
+        }
+      
+        &:hover {
+          background-color: #e4dede;
+        }
+      
+        @media screen and (max-width: 600px) {
+        }
+      }
+      h1 {
+          color: white;
+          font-weight: bold;
+          margin-bottom: 45px;
+      }
+      p{
+          color: white;
+          margin-bottom: 45px;
+      }
+}
+

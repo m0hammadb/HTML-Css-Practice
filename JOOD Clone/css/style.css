@@ -1,0 +1,731 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.badge-title {
+  background-color: #fff5d9;
+  color: #ffbb00;
+  font-weight: bold;
+  border-radius: 7px;
+  display: inline-block;
+  padding: 5px 10px;
+}
+
+.section-title {
+  font-size: 40px;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  max-width: 80%;
+}
+
+@media screen and (max-width: 1335px) {
+  .section-title {
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .section-title {
+    font-size: 32px;
+  }
+}
+
+.section-description {
+  color: #8a8a8a;
+}
+
+.display-7 {
+  font-size: 14px;
+}
+
+.logo {
+  font-size: 32px;
+  color: white;
+  font-weight: 900;
+  position: relative;
+  padding-right: 10px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.logo::after {
+  content: "";
+  position: absolute;
+  right: -2px;
+  bottom: 13px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #ffbb00;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.logo:hover {
+  color: #ffbb00;
+}
+
+.logo:hover::after {
+  background-color: white;
+}
+
+.header {
+  background-image: url("../images/headerbg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding-bottom: 300px;
+}
+
+.header .navbar .nav-item {
+  margin-left: 20px;
+  margin-right: 10px;
+}
+
+.header .navbar .nav-item a {
+  padding-left: 0;
+  font-weight: bold;
+  color: white;
+}
+
+.header .navbar .nav-item a:hover {
+  color: #ffbb00;
+}
+
+.header .navbar .nav-item .active {
+  color: #ffbb00;
+  position: relative;
+}
+
+.header .navbar .nav-item .active::after {
+  content: "";
+  width: 35px;
+  height: 2px;
+  bottom: 0;
+  left: 0px;
+  background-color: #ffbb00;
+  position: absolute;
+}
+
+.header .navbar .getappbtn {
+  background-color: #ffbb00;
+  width: 150px;
+  border-radius: 10px;
+  margin-left: 20px;
+  color: white;
+  font-weight: bold;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.header .navbar .getappbtn:hover {
+  background-color: white;
+  color: #ffbb00;
+}
+
+.header .bottom-side {
+  height: 600px;
+}
+
+.header .bottom-side .left-side h1 {
+  color: white;
+  font-weight: 900;
+  line-height: 60px;
+  letter-spacing: 2px;
+  word-spacing: 3px;
+}
+
+.header .bottom-side .left-side p {
+  color: white;
+}
+
+.header .bottom-side .left-side .btn-download {
+  font-weight: bold;
+  border-radius: 10px;
+}
+
+.header .bottom-side .left-side .play-btn {
+  text-decoration: none;
+  color: white;
+  font-weight: 900;
+}
+
+.header .bottom-side .left-side .play-btn .btn-circle {
+  color: white;
+  padding: 12px;
+  outline: 1px solid #ffbb00;
+  outline-offset: 5px;
+  background-color: #ffbb00;
+  text-align: center;
+  border-radius: 50%;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.header .bottom-side .left-side .play-btn .btn-circle:hover {
+  outline-offset: 2px;
+  color: black;
+}
+
+.header .bottom-side .left-side .play-btn span {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.header .bottom-side .left-side .play-btn:hover span {
+  color: #ffbb00;
+}
+
+.header .right-side .iphones:hover .first-phone, .header .right-side .iphones:hover .first-screen {
+  -webkit-transform: translateX(20px);
+          transform: translateX(20px);
+}
+
+.header .right-side .iphones:hover .second-phone, .header .right-side .iphones:hover .second-screen {
+  -webkit-transform: translateX(-20px);
+          transform: translateX(-20px);
+}
+
+.header .right-side .iphones:hover .first-screen, .header .right-side .iphones:hover .second-screen {
+  opacity: 1;
+}
+
+.header .right-side .iphones .first-phone {
+  top: -114px;
+  right: 0px;
+  -webkit-transition: 2s;
+  transition: 2s;
+}
+
+.header .right-side .iphones .first-screen {
+  opacity: 0;
+  top: -102px;
+  right: 10px;
+  -webkit-transition: 2s;
+  transition: 2s;
+}
+
+.header .right-side .iphones .second-phone {
+  top: -51px;
+  right: 100px;
+  -webkit-transition: 2s;
+  transition: 2s;
+}
+
+.header .right-side .iphones .second-screen {
+  opacity: 0;
+  top: -39px;
+  right: 111px;
+  -webkit-transition: 2s;
+  transition: 2s;
+}
+
+.working-logos .brand-box img {
+  width: 100px;
+  height: 100px;
+  opacity: .5;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.working-logos .brand-box img:hover {
+  opacity: 1;
+}
+
+.working-logos .brand-box .biggerimg {
+  width: 150px;
+}
+
+.about-us .left-side {
+  position: relative;
+}
+
+@media screen and (max-width: 600px) {
+  .about-us .left-side {
+    display: none;
+  }
+}
+
+.about-us .left-side .outer-line {
+  position: absolute;
+  top: 9px;
+  left: -162px;
+  width: 9px;
+  height: 1px;
+  border-radius: 50%;
+  padding: 300px;
+  background-color: transparent;
+  outline: 1px solid rgba(0, 0, 0, 0.103);
+  display: inline-block;
+  z-index: 2;
+}
+
+@media screen and (max-width: 992px) {
+  .about-us .left-side .outer-line {
+    top: 9px;
+    left: 50px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .about-us .left-side .outer-line {
+    top: 9px;
+    left: -41px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .about-us .left-side .outer-line {
+    display: none;
+  }
+}
+
+.about-us .left-side .outer-line .router {
+  content: "";
+  position: absolute;
+  width: 466px;
+  height: 400px;
+  position: absolute;
+  left: 67px;
+  top: 99px;
+  -webkit-animation-name: circleRouter;
+          animation-name: circleRouter;
+  -webkit-animation-duration: 10s;
+          animation-duration: 10s;
+  -webkit-animation-play-state: running;
+          animation-play-state: running;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-delay: 0ms;
+          animation-delay: 0ms;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+.about-us .left-side .outer-line .circle {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #3096fe;
+}
+
+.about-us .left-side .inner-line {
+  position: absolute;
+  top: 109px;
+  left: -51px;
+  width: 9px;
+  height: 1px;
+  border-radius: 50%;
+  padding: 200px;
+  background-color: transparent;
+  outline: 1px solid rgba(0, 0, 0, 0.103);
+  display: inline-block;
+  z-index: 2;
+}
+
+@media screen and (max-width: 992px) {
+  .about-us .left-side .inner-line {
+    top: 109px;
+    left: 144px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .about-us .left-side .inner-line {
+    top: 119px;
+    left: 63px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .about-us .left-side .inner-line {
+    display: none;
+  }
+}
+
+.about-us .left-side .inner-line .router {
+  position: absolute;
+  width: 298px;
+  height: 290px;
+  position: absolute;
+  left: 52px;
+  top: 54px;
+  -webkit-animation-name: circleRouter;
+          animation-name: circleRouter;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-play-state: running;
+          animation-play-state: running;
+  animation-direction: reverse;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-delay: 0ms;
+          animation-delay: 0ms;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+.about-us .left-side .inner-line .router .circle {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #ee691c;
+}
+
+.about-us .left-side img {
+  position: relative;
+  z-index: 3;
+}
+
+.about-us .btn-dl {
+  background-color: #f8f8f8;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  border-radius: 10px;
+  width: 218px;
+  height: 80px;
+  border: none;
+  margin-right: 5px;
+}
+
+.about-us .btn-dl p {
+  padding: 0;
+  margin: 0;
+  font-size: 12px;
+}
+
+.about-us .btn-dl img {
+  width: 50px;
+  height: 50px;
+  padding: 5px 0;
+}
+
+.about-us .btn-dl:hover {
+  background-color: #e4dede;
+}
+
+@-webkit-keyframes circleRouter {
+  0% {
+    -webkit-transform: rotateZ(0deg);
+            transform: rotateZ(0deg);
+  }
+  100% {
+    -webkit-transform: rotateZ(360deg);
+            transform: rotateZ(360deg);
+  }
+}
+
+@keyframes circleRouter {
+  0% {
+    -webkit-transform: rotateZ(0deg);
+            transform: rotateZ(0deg);
+  }
+  100% {
+    -webkit-transform: rotateZ(360deg);
+            transform: rotateZ(360deg);
+  }
+}
+
+.features {
+  background-color: #fcfcfc;
+  background-image: url("../images/Repeat Grid 1.png");
+  background-repeat: no-repeat;
+  background-position: left;
+  padding: 150px 0 !important;
+}
+
+@media screen and (max-width: 992px) {
+  .features {
+    background-image: none;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .features h6 {
+    font-size: 15px;
+  }
+  .features p {
+    font-size: 12px;
+  }
+}
+
+.features i {
+  -webkit-animation: colorChanger;
+          animation: colorChanger;
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
+  -webkit-transition: 1s;
+  transition: 1s;
+  color: #ffbb00;
+}
+
+.features i:hover {
+  -webkit-animation-play-state: running;
+          animation-play-state: running;
+  -webkit-animation-duration: 1000ms;
+          animation-duration: 1000ms;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes colorChanger {
+  0% {
+    color: #ffbb00;
+  }
+  25% {
+    color: chocolate;
+  }
+  50% {
+    color: red;
+  }
+  75% {
+    color: purple;
+  }
+  100% {
+    color: #ffbb00;
+  }
+}
+
+@keyframes colorChanger {
+  0% {
+    color: #ffbb00;
+  }
+  25% {
+    color: chocolate;
+  }
+  50% {
+    color: red;
+  }
+  75% {
+    color: purple;
+  }
+  100% {
+    color: #ffbb00;
+  }
+}
+
+.owl-carousel2 .owl-item {
+  -webkit-transition: 1s;
+  transition: 1s;
+  -webkit-transform: scale(0.7);
+          transform: scale(0.7);
+}
+
+.owl-carousel2 .owl-item:hover {
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+}
+
+.owl-carousel2 .center {
+  -webkit-transform: scale(0.9) !important;
+          transform: scale(0.9) !important;
+}
+
+.owl-carousel2 .owl-item:nth-last-child() {
+  -webkit-transform: scale(0.6) !important;
+          transform: scale(0.6) !important;
+}
+
+.statistics {
+  background-image: url("../images/Layer 815.png");
+  background-position: center;
+}
+
+.statistics .counter-font {
+  font-size: 32px;
+  font-weight: bold;
+  color: #3096fe;
+  display: block;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+@media screen and (max-width: 650px) {
+  .statistics .counter-font {
+    font-size: 24px;
+  }
+}
+
+.statistics .counter-title {
+  width: 100%;
+  display: inline-block;
+  text-align: center;
+  font-weight: bold;
+  margin-left: 3px;
+}
+
+.downloadapp {
+  background-image: url("../images/Rectangle 1913(2).png");
+  position: relative;
+  overflow: hidden;
+}
+
+.downloadapp .right-side {
+  -webkit-transform: translateY(80px);
+          transform: translateY(80px);
+}
+
+@media screen and (max-width: 992px) {
+  .downloadapp .right-side {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+.downloadapp .btn-dl {
+  background-color: #f8f8f8;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  border-radius: 10px;
+  width: 218px;
+  height: 80px;
+  border: none;
+  margin-right: 5px;
+}
+
+.downloadapp .btn-dl p {
+  padding: 0;
+  margin: 0;
+  font-size: 12px;
+}
+
+.downloadapp .btn-dl img {
+  width: 50px;
+  height: 50px;
+  padding: 5px 0;
+}
+
+.downloadapp .btn-dl:hover {
+  background-color: #e4dede;
+}
+
+.downloadapp h1 {
+  color: white;
+  font-weight: bold;
+  margin-bottom: 45px;
+}
+
+.downloadapp p {
+  color: white;
+  margin-bottom: 45px;
+}
+
+.contactus h1 {
+  color: rgba(0, 0, 0, 0.788);
+}
+
+.contactus form input[type="text"], .contactus form input[type="email"] {
+  height: 60px;
+}
+
+.contactus form input, .contactus form textarea {
+  background-color: #fbfbfb !important;
+  border: none !important;
+}
+
+.contactus form textarea {
+  resize: none;
+}
+
+.contactus form .sbtn {
+  width: 200px;
+  height: 50px;
+  border-radius: 10px;
+  background-color: #3096fe;
+  border-color: #3096fe;
+}
+
+.contactus form .sbtn:hover {
+  background-color: #1a7bdb;
+}
+
+.contactus p {
+  width: 50%;
+}
+
+@media screen and (max-width: 1180px) {
+  .contactus p {
+    width: 100%;
+  }
+}
+
+::-webkit-input-placeholder {
+  color: #cccccc !important;
+}
+
+:-ms-input-placeholder {
+  color: #cccccc !important;
+}
+
+::-ms-input-placeholder {
+  color: #cccccc !important;
+}
+
+::placeholder {
+  color: #cccccc !important;
+}
+
+.footer {
+  background-image: url("../images/bgBottom.png");
+}
+
+.footer .logo {
+  cursor: pointer;
+  width: 95px;
+}
+
+.footer a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.753);
+  font-weight: bold;
+  font-size: 14px;
+}
+
+@media screen and (max-width: 500px) {
+  .footer a {
+    font-size: 14px;
+  }
+}
+
+.footer a i {
+  -webkit-transition: .5s;
+  transition: .5s;
+  width: 25px;
+  height: 25px;
+  padding: 5px;
+  background-color: #5dadff;
+  margin-right: 15px;
+  margin-top: 10px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.footer a:hover i {
+  background-color: white;
+  color: #5dadff;
+}
+
+.footer .mainlinks a {
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.footer .mainlinks a:hover {
+  color: #ffbb00;
+}
+
+body {
+  font-family: 'Roboto',sans-serif;
+}
+/*# sourceMappingURL=style.css.map */

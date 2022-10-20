@@ -1,0 +1,27 @@
+.statistics {
+    background-image: url('../images/Layer\ 815.png');
+    background-position: center;
+
+    .counter-font {
+        font-size: 32px;
+        font-weight: bold;
+        color:#3096fe;
+        display: block;
+        letter-spacing: 2px;
+        text-align: center;
+
+        @media screen and (max-width:650px) {
+            font-size:24px;
+        }
+    }
+
+    .counter-title {
+        width: 100%;
+        display: inline-block;
+        text-align: center;
+        font-weight: bold;
+        margin-left: 3px;
+    }
+
+    
+}

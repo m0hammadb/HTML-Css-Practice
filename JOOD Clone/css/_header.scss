@@ -1,0 +1,145 @@
+.header {
+  background-image: url("../images/headerbg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  padding-bottom: 300px;
+  .navbar {
+    
+    .nav-item {
+      margin-left: 20px;
+      margin-right: 10px;
+      a {
+        padding-left: 0;
+        font-weight: bold;
+        color: white;
+
+        &:hover {
+          color: $primaryYellow;
+        }
+      }
+      .active {
+        color: $primaryYellow;
+        position: relative;
+      }
+
+      .active::after {
+        content: "";
+        width: 35px;
+        height: 2px;
+        bottom: 0;
+        left: 0px;
+        background-color: $primaryYellow;
+        position: absolute;
+      }
+    }
+
+    .getappbtn {
+      background-color: $primaryYellow;
+      width: 150px;
+
+      border-radius: 10px;
+      margin-left: 20px;
+      color: white;
+      font-weight: bold;
+      transition: 0.5s;
+      &:hover {
+        background-color: white;
+        color: $primaryYellow;
+      }
+    }
+  }
+
+  .bottom-side {
+    height: 600px;
+    .left-side {
+      h1 {
+        color: white;
+        font-weight: 900;
+        line-height: 60px;
+        letter-spacing: 2px;
+        word-spacing: 3px;
+      }
+
+      p {
+        color: white;
+      }
+
+      .btn-download {
+        font-weight: bold;
+        border-radius: 10px;
+      }
+
+      .play-btn {
+        text-decoration: none;
+        color: white;
+        font-weight: 900;
+        .btn-circle {
+          color: white;
+          padding: 12px;
+          outline: 1px solid $primaryYellow;
+          outline-offset: 5px;
+          background-color: $primaryYellow;
+          text-align: center;
+          border-radius: 50%;
+          transition: 0.2s;
+          &:hover {
+            outline-offset: 2px;
+            color: black;
+          }
+        }
+        span {
+          transition: 0.5s;
+        }
+        &:hover span {
+          color: $primaryYellow;
+        }
+      }
+    }
+  }
+
+  .right-side {
+    .iphones {
+      &:hover .first-phone, &:hover .first-screen {
+        transform: translateX(20px);
+      }
+      &:hover .second-phone,&:hover .second-screen {
+        transform: translateX(-20px);
+      }
+
+      &:hover .first-screen, &:hover .second-screen {
+          opacity: 1;
+          
+      }
+      
+      .first-phone {
+        top: -114px;
+        right: 0px;
+        transition: 2s;
+      }
+      .first-screen {
+          
+          opacity: 0;
+        top: -102px;
+        right: 10px;
+        transition: 2s;
+      }
+      .second-phone {
+          
+        top: -51px;
+        right: 100px;
+        transition: 2s;
+      }
+
+      .second-screen {
+        
+        opacity: 0;
+        top: -39px;
+        right: 111px;
+        transition: 2s;
+      }
+
+    }
+  }
+}

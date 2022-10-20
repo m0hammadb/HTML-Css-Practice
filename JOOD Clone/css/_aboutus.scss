@@ -1,0 +1,153 @@
+.about-us {
+.left-side {
+  position: relative;
+  @media screen and (max-width: 600px) {
+    display: none;
+  }
+  .outer-line {
+    position: absolute;
+    top: 9px;
+    left: -162px;
+    width: 9px;
+    height: 1px;
+    border-radius: 50%;
+    padding: 300px;
+    background-color: transparent;
+    outline: 1px solid rgba(0, 0, 0, 0.103);
+    display: inline-block;
+    z-index: 2;
+
+    @media screen and (max-width: 992px) {
+      top: 9px;
+      left: 50px;
+    }
+    @media screen and (max-width: 767px) {
+      top: 9px;
+      left: -41px;
+    }
+    @media screen and (max-width: 600px) {
+      display: none;
+    }
+
+    .router {
+      content: "";
+      position: absolute;
+      width: 466px;
+      height: 400px;
+      position: absolute;
+      left: 67px;
+      top: 99px;
+
+      animation-name: circleRouter;
+      animation-duration: 10s;
+      animation-play-state: running;
+      animation-timing-function: linear;
+      animation-delay: 0ms;
+      animation-iteration-count: infinite;
+    }
+
+    .circle {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      position: absolute;
+      top: 0;
+      right: 0;
+      background-color: #3096fe;
+    }
+  }
+
+  .inner-line {
+    position: absolute;
+    top: 109px;
+    left: -51px;
+    width: 9px;
+    height: 1px;
+    border-radius: 50%;
+    padding: 200px;
+    background-color: transparent;
+    outline: 1px solid rgba(0, 0, 0, 0.103);
+    display: inline-block;
+    z-index: 2;
+
+    @media screen and (max-width: 992px) {
+      top: 109px;
+      left: 144px;
+    }
+    @media screen and (max-width: 767px) {
+      top: 119px;
+      left: 63px;
+    }
+    @media screen and (max-width: 600px) {
+      display: none;
+    }
+
+    .router {
+      position: absolute;
+      width: 298px;
+      height: 290px;
+      position: absolute;
+      left: 52px;
+      top: 54px;
+
+      animation-name: circleRouter;
+      animation-duration: 2s;
+      animation-play-state: running;
+      animation-direction: reverse;
+      animation-timing-function: linear;
+      animation-delay: 0ms;
+      animation-iteration-count: infinite;
+      .circle {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-color: #ee691c;
+      }
+    }
+  }
+
+  img {
+    position: relative;
+    z-index: 3;
+  }
+}
+
+.btn-dl {
+  background-color: #f8f8f8;
+  transition: 0.5s;
+  border-radius: 10px;
+  width: 218px;
+  height: 80px;
+  border: none;
+  margin-right: 5px;
+  p {
+    padding: 0;
+    margin: 0;
+    font-size: 12px;
+  }
+  img {
+    width: 50px;
+    height: 50px;
+    padding: 5px 0;
+  }
+
+  &:hover {
+    background-color: #e4dede;
+  }
+
+  @media screen and (max-width: 600px) {
+  }
+}
+}
+@keyframes circleRouter {
+  0% {
+    transform: rotateZ(0deg);
+  }
+
+  100% {
+    transform: rotateZ(360deg);
+  }
+}
